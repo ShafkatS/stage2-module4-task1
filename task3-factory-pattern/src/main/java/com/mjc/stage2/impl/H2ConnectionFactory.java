@@ -9,8 +9,8 @@ import java.sql.SQLException;
 import java.util.Map;
 import java.util.Properties;
 
-public class H2ConnectionFactory ConnectionFactory ConnectionFactory {
- @Override
+public class H2ConnectionFactory implements ConnectionFactory {
+@Override
     public Connection createConnection() {
         Properties properties = new Properties();
         String propFileName = "h2database.properties";
